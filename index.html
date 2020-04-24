@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../static/style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GENDER RECOGNITION BY VOICE</h1>
+        </header>
+        <div class="card">
+            <h3><b>UPLOAD AN <strong>AUDIO</strong> FOR GENDER PREDICTION</b></h3>
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <input type="file" name="audio" required><br/><br/>
+                <input type="reset" value="RESET" class="btn">
+                <input type="submit" value="UPLOAD" class="btn">
+            </form>
+        </div>
+        <footer>
+            <b>Siman-Rahul-Sawan<br>Guided by Kaushik Goswami<br/>2020</b>
+        </footer>
+    </div>
+</body>
+
+</html>

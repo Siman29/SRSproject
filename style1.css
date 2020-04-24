@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 450;
+    font-family: Times New Roman;
+}
+
+body {
+    position: relative;
+    display: block;
+    block-size: 50%;
+    margin: 10px;
+    padding: 5px;
+    background-image: url('_87558504_87558503.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+p {
+    color: deepskyblue;
+}
+
+.container {
+    position: relative;
+    top: 1rem;
+    margin: 5px;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 70% auto;
+    align-items: center;
+    grid-template-areas: "header" "upload-part" "footer";
+    height: 90vh;
+}
+
+.container header {
+    grid-area: header;
+    border: 1px solid black;
+    background-image: linear-gradient(90 deg, rgba(12, 69, 107, 0.637), rgba(0, 0, 0, 0.993));
+    border-radius: .54em;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.801);
+    box-shadow: -5px -6px 20px rgba(0, 0, 0, .808), 5px 6px 20px rgba(255, 255, 255, 0.657);
+    transition: .5s;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+strong {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.container header:hover {
+    transition: .8s ease-out;
+    transform: scale(1.03, 1.05);
+    color: rgba(23, 121, 233, 0.801);
+    box-shadow: inset -2px -3px 10px rgba(230, 21, 21, 0.822);
+}
+
+.container .card {
+    border-radius: 12px;
+    box-shadow: -5px -6px 20px rgba(0, 0, 0, 0.808), 5px 6px 20px rgba(255, 255, 255, 0.807);
+    transition: .9s;
+    margin: 15px;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 300;
+    background-image: linear-gradient(90deg, rgba(12, 69, 107, 0.637), rgba(0, 0, 0, 0.803));
+    color: rgba(247, 8, 8, 0.801);
+}
+
+.container .card:hover {
+    transition: 1.2s ease-out;
+    transform: scale(1.05, 1.08);
+    box-shadow: inset -2px -3px 10px rgba(236, 8, 8, 0.822);
+    color: rgba(235, 141, 141, 0.801);
+}
+
+.container .card form {
+    margin: 15px;
+    padding: 13px;
+    color: rgba(207, 24, 64, 0.788);
+    background-color: rgba(0, 0, 0, 0.726);
+    font-size: 20px;
+    font-weight: 350;
+    border-radius: 15px;
+}
+
+.container .card form input {
+    padding: 2px;
+    font-size: 18px;
+}
+
+.container .card form .uploader {
+    border-radius: 2em;
+    padding: 3px;
+    border: 2px solid black;
+    background: black;
+}
+
+.container .card form .btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    border-style: none;
+    border-radius: 9px;
+    outline: white;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(60deg, rgba(0, 132, 255, 0.877), rgba(12, 218, 115, 0.932));
+}
+
+.container .card form .btn:active {
+    box-shadow: inset -2px -2px 6px rgba(32, 231, 205, 0.486), inset 2px 2px 7px rgba(6, 36, 15, 0.863);
+}
+
+.container .card form .btn:hover {
+    transition: 1.2s;
+    box-shadow: 2px 2px 3px rgb(243, 8, 8);
+    color: rgba(238, 17, 17, 0.829);
+}
+
+.container footer {
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.657)
+}
+
+.container footer:hover {
+    transition: .7s ease-in-out;
+    color: rgba(45, 81, 201, 0.811);
+    font-weight: bolder;
+}

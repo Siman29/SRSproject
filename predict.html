@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../static/style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Predict</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GENDER RECOGNITION BY VOICE</h1>
+        </header>
+        <div class="card">
+            <form action="/gender" method="POST" enctype="multipart/form-data">
+                <audio controls autoplay>
+                    <source src={{ url_for('static', filename='audio/'+ audio ) }} type="audio/wav">
+                </audio>
+                <input type="hidden" value="{{ audio }}" name="audio">
+                <input type="submit" value="PREDICT" class="btn">
+            </form>
+        </div>
+        <footer>
+            Siman-Rahul-Sawan <br/>Guided by Kaushik Goswami<br/>2020
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!--<form action='/gender.html' method='POST'>
+        <p align="center">
+            <u>GENDER RECOGNITION BY VOICE</u>
+        </p>
+        <p align="center">
+            <br/><br/><br/><br/>
+            <audio controls autoplay>
+                    <source src={{ url_for('static', filename=audio) }} type="audio/.*">
+                </audio><br/>
+            <input type="submit" value="Predict">
+        </p>
+    </form>-->
